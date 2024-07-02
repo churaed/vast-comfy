@@ -92,6 +92,10 @@ SNAPSHOTS=(
     "https://raw.githubusercontent.com/churaed/vast-comfy/main/snapshot_0.1.json"
 )
 
+# CLIP_VISION=(
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
+# )
+
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -102,7 +106,7 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_install_python_packages
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/ckpt" \
+        "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/lora" \
