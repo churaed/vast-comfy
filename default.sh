@@ -21,11 +21,14 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     "https://civitai.com/api/download/models/256668"
     "https://civitai.com/api/download/models/132760"
+    "https://civitai.com/api/download/models/344398"
 )
 
 LORA_MODELS=(
     #"https://civitai.com/api/download/models/16576"
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
+    "https://civitai.com/api/download/models/87153"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
 )
 
 ANIMATEDIFF_MODELS=(
@@ -34,6 +37,7 @@ ANIMATEDIFF_MODELS=(
     "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt"
     "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt"
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_mm.ckpt"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v.ckpt"
 )
 
 VAE_MODELS=(
@@ -106,6 +110,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/animatediff_models" \
+        "${ANIMATEDIFF_MODELS[@]}"
     provisioning_print_end
 }
 
