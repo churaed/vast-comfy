@@ -17,10 +17,6 @@
             "hash": "b0f21a3c13bac21068d1dcceb7c2d466167054b3",
             "disabled": false
         },
-        "https://github.com/kijai/ComfyUI-DepthAnythingV2": {
-            "hash": "047a4ecfd09a951944154c7f3e823566e586c2d5",
-            "disabled": false
-        },
         "https://github.com/yolain/ComfyUI-Easy-Use": {
             "hash": "7a3f25b4f2ff2183b15cbf6c7e01b1adb702b3a8",
             "disabled": false
