@@ -88,6 +88,10 @@ CONTROLNET_MODELS=(
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_sparsectrl_scribble.ckpt"
 )
 
+SNAPSHOTS=(
+    "https://raw.githubusercontent.com/churaed/vast-comfy/main/snapshot_0.1.json"
+)
+
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -98,23 +102,26 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_install_python_packages
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
+        "${WORKSPACE}/ComfyUI/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/lora" \
+        "${WORKSPACE}/ComfyUI/models/lora" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/controlnet" \
+        "${WORKSPACE}/ComfyUI/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/vae" \
+        "${WORKSPACE}/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
+        "${WORKSPACE}/ComfyUI/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/animatediff_models" \
+        "${WORKSPACE}/ComfyUI/models/animatediff_models" \
         "${ANIMATEDIFF_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/snapshots" \
+        "${SNAPSHOTS[@]}"
     provisioning_print_end
 }
 
