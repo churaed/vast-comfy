@@ -165,9 +165,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/snapshots" \
         "${SNAPSHOTS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
-        "${YOLO[@]}"
+    # provisioning_get_models \
+    #     "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
+    #     "${YOLO[@]}"
     provisioning_print_end
 }
 
