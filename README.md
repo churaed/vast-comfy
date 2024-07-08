@@ -7,7 +7,7 @@
 download [efficient_sam_s_cpu.jit](https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_cpu.jit) and [efficient_sam_s_gpu.jit](https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_gpu.jit) 
 and put them into folder:
 
-`custom_nodes/ComfyUI-YoloWorld-EfficientSAM `
+`custom_nodes/ComfyUI-YoloWorld-EfficientSAM`
 
 ## Usage
 
