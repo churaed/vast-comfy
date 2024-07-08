@@ -11,7 +11,11 @@ and put them into folder:
 
 ## Usage
 
-Import this template_mask to add neccesary nodes.
+Import this `template_mask.json` to add neccessary nodes.
+
+| ![](docs/img/template_load_1.png) | ![](docs/img/template_load_2.png) | ![](docs/img/template_load_3.png) |
+|:----------------:|:----------------:|:----------------:|
+| Template Manager  | Import template  | Load Template  |
 
 ❗️ If you want to use it in your own workflow, you'd need to adjust `Set` and `Get` variables that are used in this template.
 
