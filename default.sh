@@ -30,6 +30,7 @@ NODES=(
     "https://github.com/BlenderNeko/ComfyUI_Noise"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
 )
 
 CHECKPOINT_MODELS=(
@@ -165,9 +166,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/snapshots" \
         "${SNAPSHOTS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
-    #     "${YOLO[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
+        "${YOLO[@]}"
     provisioning_print_end
 }
 
