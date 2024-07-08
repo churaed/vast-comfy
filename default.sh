@@ -135,6 +135,7 @@ function provisioning_start() {
     DISK_GB_USED=$(($(df --output=used -m "${WORKSPACE}" | tail -n1) / 1000))
     DISK_GB_ALLOCATED=$(($DISK_GB_AVAILABLE + $DISK_GB_USED))
     provisioning_print_header
+    provisioning_update_comfyui
     provisioning_get_nodes
     provisioning_install_python_packages
     provisioning_get_models \
@@ -233,6 +234,19 @@ function provisioning_print_end() {
 # Download from $1 URL to $2 file path
 function provisioning_download() {
     wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+}
+
+# Update ComfyUI
+function provisioning_update_comfyui() {
+    printf "Updating ComfyUI...\n"
+    if [[ -d "${WORKSPACE}/ComfyUI" ]]; then
+        ( cd "${WORKSPACE}/ComfyUI" && git pull )
+    else
+        git clone https://github.com/comfyanonymous/ComfyUI.git "${WORKSPACE}/ComfyUI"
+    fi
+    if [[ -e "${WORKSPACE}/ComfyUI/requirements.txt" ]]; then
+        micromamba -n comfyui run ${PIP_INSTALL} -r "${WORKSPACE}/ComfyUI/requirements.txt"
+    fi
 }
 
 provisioning_start
