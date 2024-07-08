@@ -31,6 +31,7 @@ NODES=(
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
+    "https://github.com/daxcay/ComfyUI-JDCN"
 )
 
 CHECKPOINT_MODELS=(
