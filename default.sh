@@ -42,6 +42,8 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/256668"
     "https://huggingface.co/Lykon/AbsoluteReality/resolve/main/AbsoluteReality_1.8.1_pruned.safetensors"
     "https://civitai.com/api/download/models/344398"
+    "https://huggingface.co/churaed/mosaic/resolve/main/blokadachd_15.ckpt"
+    "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
 )
 
 LORA_MODELS=(
@@ -49,6 +51,7 @@ LORA_MODELS=(
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
     "https://civitai.com/api/download/models/87153"
     "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
+    "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
 )
 
 ANIMATEDIFF_MODELS=(
