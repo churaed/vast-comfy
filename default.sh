@@ -44,6 +44,7 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/344398"
     "https://huggingface.co/churaed/mosaic/resolve/main/blokadachd_15.ckpt"
     "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
+    "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
 )
 
 LORA_MODELS=(
