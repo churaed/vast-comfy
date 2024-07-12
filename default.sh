@@ -63,6 +63,15 @@ LORA_MODELS=(
     "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
 )
 
+SDXL_LORA_MODELS=(
+    # "https://huggingface.co/taki0112/lora-trained-xl_mosaic-art_split/resolve/main/pytorch_lora_weights.safetensors"
+    "https://huggingface.co/CiroN2022/mosaic-style/resolve/main/mosaic.safetensors"
+    "https://civitai.com/api/download/models/444936?type=Model&format=SafeTensor" # Colorful Mosaic SDXL v2
+    "https://civitai.com/api/download/models/390257?type=Model&format=SafeTensor" # ArtfullyMOSAIC SDXL V1
+    "https://civitai.com/api/download/models/206134?type=Model&format=SafeTensor" # Socrealistic Mosaic Style XL
+    "https://civitai.com/api/download/models/288512?type=Model&format=SafeTensor" # Mosaic Texture SDXL
+)
+
 ANIMATEDIFF_MODELS=(
     # "https://civitai.com/api/download/models/366178"
     "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt"
@@ -168,6 +177,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/loras/sdxl" \
+        "${SDXL_LORA_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
