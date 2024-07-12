@@ -46,6 +46,12 @@ CHECKPOINT_MODELS=(
     "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
     "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
     "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
+    "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
+
+)
+
+SDXL_MODELS=(
+    "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
 )
 
 LORA_MODELS=(
@@ -135,6 +141,13 @@ YOLO=(
     "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_cpu.jit"
 )
 
+EMBEDDINGS=(
+    "https://civitai.com/api/download/models/9208"
+    "https://civitai.com/api/download/models/77169"
+    "https://civitai.com/api/download/models/94057"
+    "https://civitai.com/api/download/models/82745"
+)
+
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -148,6 +161,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
+        "${SDXL_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
