@@ -51,8 +51,8 @@ CHECKPOINT_MODELS=(
 )
 
 SDXL_MODELS=(
-    "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
-    "https://huggingface.co/sd-community/sdxl-flash/resolve/main/SDXL-Flash.safetensors"
+    # "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
+    # "https://huggingface.co/sd-community/sdxl-flash/resolve/main/SDXL-Flash.safetensors"
 )
 
 LORA_MODELS=(
