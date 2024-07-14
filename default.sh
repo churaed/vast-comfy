@@ -60,8 +60,9 @@ LORA_MODELS=(
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
     "https://civitai.com/api/download/models/87153"
     "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
+    "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
     "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
-    "https://civitai.com/api/download/models/288694" # statue
+    "https://civitai.com/api/download/models/288694" # statue shigao
     "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
     "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
     "https://civitai.com/api/download/models/250533" # Sculpture
@@ -85,6 +86,7 @@ ANIMATEDIFF_MODELS=(
     "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt"
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_mm.ckpt"
     "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v.ckpt"
+    "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v.ckpt"
     "https://huggingface.co/moonshotmillion/AnimateDiff_LCM_Motion_Model_v1/resolve/main/animatediffLCMMotion_v10.ckpt"
 )
 
