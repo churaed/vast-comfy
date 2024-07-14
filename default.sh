@@ -61,6 +61,12 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/87153"
     "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
     "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
+    "https://civitai.com/api/download/models/288694" # statue
+    "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
+    "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
+    "https://civitai.com/api/download/models/250533" # Sculpture
+    "https://civitai.com/api/download/models/451956" # HXZsculpture-1
+
 )
 
 SDXL_LORA_MODELS=(
