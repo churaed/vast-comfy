@@ -35,6 +35,8 @@ NODES=(
 )
 
 CHECKPOINT_MODELS=(
+    "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper8_LCM.safetensors"
+    "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors"
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
@@ -164,6 +166,9 @@ EMBEDDINGS=(
     "https://civitai.com/api/download/models/77169"
     "https://civitai.com/api/download/models/94057"
     "https://civitai.com/api/download/models/82745"
+    "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbedding.pt"
+    "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbeddingStrong.pt"
+    "https://huggingface.co/Lykon/DreamShaper/resolve/main/UnrealisticDream.pt"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
