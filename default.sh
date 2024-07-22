@@ -91,6 +91,19 @@ ANIMATEDIFF_MODELS=(
     "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v.ckpt"
     "https://huggingface.co/moonshotmillion/AnimateDiff_LCM_Motion_Model_v1/resolve/main/animatediffLCMMotion_v10.ckpt"
 )
+ANIMATEDIFF_MOTION_LORA=(
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingAnticlockwise.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingClockwise.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt"
+)
 
 VAE_MODELS=(
     "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
@@ -211,6 +224,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/animatediff_models" \
         "${ANIMATEDIFF_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/animatediff_motion_lora" \
+        "${ANIMATEDIFF_MOTION_LORA[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/snapshots" \
         "${SNAPSHOTS[@]}"
