@@ -32,6 +32,10 @@ NODES=(
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
     "https://github.com/daxcay/ComfyUI-JDCN"
+    "https://github.com/comfyanonymous/ComfyUI_experiments"
+    "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
+    "https://github.com/sipherxyz/comfyui-art-venture"
+    "https://github.com/M1kep/ComfyLiterals"
 )
 
 CHECKPOINT_MODELS=(
