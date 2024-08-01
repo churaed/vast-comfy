@@ -36,6 +36,7 @@ NODES=(
     "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
     "https://github.com/sipherxyz/comfyui-art-venture"
     "https://github.com/M1kep/ComfyLiterals"
+    "https://github.com/kijai/ComfyUI-segment-anything-2"
 )
 
 CHECKPOINT_MODELS=(
