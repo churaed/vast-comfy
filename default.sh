@@ -192,6 +192,9 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/embeddings" \
+        "${EMBEDDINGS[@]}"
+    provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/loras/sdxl" \
         "${SDXL_LORA_MODELS[@]}"
     provisioning_get_models \
