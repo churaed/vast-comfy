@@ -55,7 +55,7 @@ CHECKPOINT_MODELS=(
     # "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
     # "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
     # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
-    "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
+    # "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
 
 )
 
@@ -65,17 +65,17 @@ SDXL_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
-    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
     "https://civitai.com/api/download/models/87153" # more details
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
     "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
-    "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
-    "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
-    "https://civitai.com/api/download/models/288694" # statue shigao
-    "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
-    "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
-    "https://civitai.com/api/download/models/250533" # Sculpture
     "https://civitai.com/api/download/models/451956" # HXZsculpture-1
+    "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
+    # "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
+    # "https://civitai.com/api/download/models/288694" # statue shigao
+    # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
+    # "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
+    # "https://civitai.com/api/download/models/250533" # Sculpture
 
 )
 
@@ -120,6 +120,7 @@ VAE_MODELS=(
 
 UPSCALE_MODELS=(
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
+    "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth"
     # "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
     # "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
@@ -139,6 +140,7 @@ CONTROLNET_MODELS=(
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth"
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_sparsectrl_rgb.ckpt"
     "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_sparsectrl_scribble.ckpt"
+    "https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors"
 )
 
 SNAPSHOTS=(
