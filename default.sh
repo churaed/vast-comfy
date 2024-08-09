@@ -164,6 +164,10 @@ YOLO=(
     "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_cpu.jit"
 )
 
+BIREFNET=(
+    "https://huggingface.co/ViperYX/BiRefNet/resolve/main/BiRefNet-DIS_ep580.pth"
+)
+
 EMBEDDINGS=(
     "https://civitai.com/api/download/models/9208"
     "https://civitai.com/api/download/models/77169"
@@ -226,6 +230,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
         "${YOLO[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/BiRefNet" \
+        "${BIREFNET[@]}"
     provisioning_print_end
 }
 
