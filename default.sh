@@ -38,6 +38,7 @@ NODES=(
     "https://github.com/M1kep/ComfyLiterals"
     "https://github.com/kijai/ComfyUI-segment-anything-2"
     "https://github.com/MrForExample/ComfyUI-3D-Pack"
+    "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
 )
 
 CHECKPOINT_MODELS=(
