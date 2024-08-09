@@ -166,6 +166,7 @@ YOLO=(
 
 BIREFNET=(
     "https://huggingface.co/ViperYX/BiRefNet/resolve/main/BiRefNet-DIS_ep580.pth"
+    "https://huggingface.co/ViperYX/BiRefNet/resolve/main/swin_large_patch4_window12_384_22kto1k.pth"
 )
 
 EMBEDDINGS=(
