@@ -64,8 +64,11 @@ FLUX_MODELS=(
     "https://huggingface.co/Kijai/flux-fp8/blob/resolve/main/flux1-schnell-fp8.safetensors"
 )
 
-FLUX_LORA=(
+FLUX_LORA=()
 
+CLIP_MODELS=(
+    "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors"
+    "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors"
 )
 
 SDXL_MODELS=(
@@ -209,6 +212,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
         "${SDXL_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/clip" \
+        "${CLIP_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
