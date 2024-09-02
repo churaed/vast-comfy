@@ -71,6 +71,25 @@ UNET_MODELS=(
     "https://huggingface.co/city96/FLUX.1-schnell-gguf/resolve/main/flux1-schnell-Q4_1.gguf"
 )
 
+XLAB_LORA=(
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/anime_lora_comfy_converted.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/art_lora_comfy_converted.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/disney_lora_comfy_converted.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/mjv6_lora_comfy_converted.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/realism_lora_comfy_converted.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/scenery_lora_comfy_converted.safetensors"
+)
+
+XLAB_CONTROLNET=(
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-canny-controlnet-v3.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-depth-controlnet-v3.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-hed-controlnet-v3.safetensors"
+)
+
+XLAB_IPADAPTER=(
+    "https://huggingface.co/XLabs-AI/flux-ip-adapter/resolve/main/flux-ip-adapter.safetensors"
+)
+
 FLUX_LORA=()
 
 CLIP_MODELS=(
@@ -270,6 +289,15 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/BiRefNet" \
         "${BIREFNET[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
+        "${XLAB_IPADAPTER[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/controlnets" \
+        "${XLAB_CONTROLNET[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
+        "${XLAB_LORA[@]}"
     provisioning_print_end
 }
 
