@@ -64,11 +64,20 @@ FLUX_MODELS=(
     "https://huggingface.co/Kijai/flux-fp8/blob/resolve/main/flux1-schnell-fp8.safetensors"
 )
 
+UNET_MODELS=(
+    "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
+    "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
+    "https://huggingface.co/city96/FLUX.1-schnell-gguf/resolve/main/flux1-schnell-Q8_0.gguf"
+    "https://huggingface.co/city96/FLUX.1-schnell-gguf/resolve/main/flux1-schnell-Q4_1.gguf"
+)
+
 FLUX_LORA=()
 
 CLIP_MODELS=(
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors"
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors"
+    "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q4_K_S.gguf"
+    "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf"
 )
 
 SDXL_MODELS=(
@@ -210,6 +219,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints/flux" \
         "${FLUX_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/unet" \
+        "${UNET_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
         "${SDXL_MODELS[@]}"
