@@ -61,7 +61,7 @@ CHECKPOINT_MODELS=(
 )
 
 FLUX_MODELS=(
-    "https://huggingface.co/Kijai/flux-fp8/blob/resolve/main/flux1-schnell-fp8.safetensors"
+    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
 )
 
 UNET_MODELS=(
