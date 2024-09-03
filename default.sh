@@ -39,6 +39,7 @@ NODES=(
     "https://github.com/kijai/ComfyUI-segment-anything-2"
     "https://github.com/MrForExample/ComfyUI-3D-Pack"
     "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
+    "https://github.com/filliptm/ComfyUI_Fill-Nodes"
     # Product Photo
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     "https://github.com/kijai/ComfyUI-IC-Light"
