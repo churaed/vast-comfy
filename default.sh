@@ -51,7 +51,6 @@ CHECKPOINT_MODELS=(
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper8_LCM.safetensors"
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors"
     "https://civitai.com/api/download/models/588174" UmamiLCM
-    "https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/resolve/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors"
     "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors"
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
@@ -65,6 +64,21 @@ CHECKPOINT_MODELS=(
     # "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
     # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
     # "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
+
+)
+
+LORA_MODELS=(
+    "https://civitai.com/api/download/models/87153" # more details
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
+    "https://civitai.com/api/download/models/451956" # HXZsculpture-1
+    "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
+    # "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
+    # "https://civitai.com/api/download/models/288694" # statue shigao
+    # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
+    # "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
+    # "https://civitai.com/api/download/models/250533" # Sculpture
 
 )
 
@@ -108,23 +122,11 @@ CLIP_MODELS=(
 )
 
 SDXL_MODELS=(
-    # "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
+    "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
     # "https://huggingface.co/sd-community/sdxl-flash/resolve/main/SDXL-Flash.safetensors"
-)
-
-LORA_MODELS=(
-    "https://civitai.com/api/download/models/87153" # more details
-    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
-    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
-    "https://civitai.com/api/download/models/451956" # HXZsculpture-1
-    "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
-    # "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
-    # "https://civitai.com/api/download/models/288694" # statue shigao
-    # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
-    # "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
-    # "https://civitai.com/api/download/models/250533" # Sculpture
-
+    "https://civitai.com/api/download/models/714404" # MooMooE-comerceSDXL Product Photography
+    "https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/resolve/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors"
+    "https://huggingface.co/erohinem/SDXL/resolve/bb3b7fa6598742f81f3eae359fe39165ba29e6dd/juggernautXL_v9Rdphoto2Lightning.safetensors"
 )
 
 SDXL_LORA_MODELS=(
@@ -134,7 +136,9 @@ SDXL_LORA_MODELS=(
     # "https://civitai.com/api/download/models/390257?type=Model&format=SafeTensor" # ArtfullyMOSAIC SDXL V1
     # "https://civitai.com/api/download/models/206134?type=Model&format=SafeTensor" # Socrealistic Mosaic Style XL
     # "https://civitai.com/api/download/models/288512?type=Model&format=SafeTensor" # Mosaic Texture SDXL
+    "https://civitai.com/api/download/models/703047" # Product Photography
 )
+
 
 ANIMATEDIFF_MODELS=(
     # "https://civitai.com/api/download/models/366178"
