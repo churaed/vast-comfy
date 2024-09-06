@@ -105,28 +105,22 @@ RUN git clone "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite" && \
 
 # Extra nodes
 RUN git clone "https://github.com/cubiq/ComfyUI_IPAdapter_plus" && \
-    cd ComfyUI_IPAdapter_plus && \
-    # git reset --hard 13fedc634d1abf19d289fc7a7b5a74589465206c
+    cd ComfyUI_IPAdapter_plus 
 RUN git clone "https://github.com/ssitu/ComfyUI_UltimateSDUpscale" --recursive && \
-    cd ComfyUI_UltimateSDUpscale && \
-    # git reset --hard 70083f5d449c498ee0fb35f5293c91cebac4b758
+    cd ComfyUI_UltimateSDUpscale
 RUN git clone "https://github.com/ltdrdata/ComfyUI-Inspire-Pack" && \
     cd ComfyUI-Inspire-Pack && \
-    # git reset --hard cadf604de528be62e4fbb1e3d12c51c98f20f50b && \
     pip install --no-cache -r requirements.txt
 RUN git clone "https://github.com/edenartlab/eden_comfy_pipelines" && \
     cd eden_comfy_pipelines && \
-    # git reset --hard 1b64dd507e8560466a8a50b8b8a704547890f525 && \
     pip install --no-cache -r requirements.txt
 RUN git clone "https://github.com/WASasquatch/was-node-suite-comfyui" && \
     cd was-node-suite-comfyui && \
-    # git reset --hard e036c1aa1b228c31473f78e020f47f0ce94d4c80 && \
     pip install --no-cache -r requirements.txt
 
 # Clone comfyui-manager to handle extra nodes
 RUN git clone "https://github.com/ltdrdata/ComfyUI-Manager.git" && \
-    cd ComfyUI-Manager && \
-    # git reset --hard 2b8e76197ae970dbd7854a09a5ef57731dc1c82f
+    cd ComfyUI-Manager
 
 WORKDIR /app
 ENTRYPOINT [ "python", "main.py", "--listen", "0.0.0.0" ]
