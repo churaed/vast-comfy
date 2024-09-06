@@ -8,17 +8,33 @@ jobs:
   build-and-push-image:
 
     runs-on: ubuntu-22.04
+    permissions:
+      packages: write
+      contents: read
+      attestations: write
+      id-token: write
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Log in to GitHub Container Registry
-      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+    - name: Log in to the Container registry
+      uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/${{ github.repository }}/comfy-with-3d-pack
+    - name: Build and push Docker images
+      id: push
+      uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+      with:
+        context: .
+        push: true
 
-    - name: Push Docker image
-      run: |
-        docker push ghcr.io/${{ github.repository }}/comfy-with-3d-pack
+    # - name: Build the Docker image
+    #   run: docker build . --file Dockerfile --tag ghcr.io/${{ github.repository }}/comfy-with-3d-pack
+
+    # - name: Push Docker image
+    #   run: |
+    #     docker push ghcr.io/${{ github.repository }}/comfy-with-3d-pack
