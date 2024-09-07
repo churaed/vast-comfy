@@ -83,7 +83,7 @@ LORA_MODELS=(
 )
 
 FLUX_MODELS=(
-    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+    "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
 )
 
 UNET_MODELS=(
@@ -253,7 +253,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints/flux" \
+        "${WORKSPACE}/ComfyUI/models/checkpoints/FLUX1" \
         "${FLUX_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/unet" \
@@ -268,7 +268,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/loras/flux" \
+        "${WORKSPACE}/ComfyUI/models/loras/FLUX1" \
         "${FLUX_LORA[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/embeddings" \
