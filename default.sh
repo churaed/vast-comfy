@@ -249,72 +249,72 @@ function provisioning_start() {
     provisioning_update_comfyui
     provisioning_get_nodes
     provisioning_install_python_packages
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/checkpoints" \
-    #     "${CHECKPOINT_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/checkpoints/flux" \
-    #     "${FLUX_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/unet" \
-    #     "${UNET_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
-    #     "${SDXL_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/clip" \
-    #     "${CLIP_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/loras" \
-    #     "${LORA_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/loras/flux" \
-    #     "${FLUX_LORA[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/embeddings" \
-    #     "${EMBEDDINGS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/loras/sdxl" \
-    #     "${SDXL_LORA_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/controlnet" \
-    #     "${CONTROLNET_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/vae" \
-    #     "${VAE_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/upscale_models" \
-    #     "${UPSCALE_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/clip_vision" \
-    #     "${CLIP_VISION[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/ipadapter" \
-    #     "${IPADAPTER[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/animatediff_models" \
-    #     "${ANIMATEDIFF_MODELS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/animatediff_motion_lora" \
-    #     "${ANIMATEDIFF_MOTION_LORA[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/snapshots" \
-    #     "${SNAPSHOTS[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
-    #     "${YOLO[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/BiRefNet" \
-    #     "${BIREFNET[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
-    #     "${XLAB_IPADAPTER[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/xlabs/controlnets" \
-    #     "${XLAB_CONTROLNET[@]}"
-    # provisioning_get_models \
-    #     "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
-    #     "${XLAB_LORA[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/checkpoints" \
+        "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/checkpoints/flux" \
+        "${FLUX_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/unet" \
+        "${UNET_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
+        "${SDXL_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/clip" \
+        "${CLIP_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/loras" \
+        "${LORA_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/loras/flux" \
+        "${FLUX_LORA[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/embeddings" \
+        "${EMBEDDINGS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/loras/sdxl" \
+        "${SDXL_LORA_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/controlnet" \
+        "${CONTROLNET_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/vae" \
+        "${VAE_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/upscale_models" \
+        "${UPSCALE_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/clip_vision" \
+        "${CLIP_VISION[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/ipadapter" \
+        "${IPADAPTER[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/animatediff_models" \
+        "${ANIMATEDIFF_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/animatediff_motion_lora" \
+        "${ANIMATEDIFF_MOTION_LORA[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/snapshots" \
+        "${SNAPSHOTS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/custom_nodes/ComfyUI-YoloWorld-EfficientSAM" \
+        "${YOLO[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/BiRefNet" \
+        "${BIREFNET[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
+        "${XLAB_IPADAPTER[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/controlnets" \
+        "${XLAB_CONTROLNET[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
+        "${XLAB_LORA[@]}"
     provisioning_print_end
 }
 
