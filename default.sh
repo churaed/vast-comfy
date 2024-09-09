@@ -40,6 +40,7 @@ NODES=(
     "https://github.com/MrForExample/ComfyUI-3D-Pack"
     "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
     "https://github.com/filliptm/ComfyUI_Fill-Nodes"
+    "https://github.com/M1kep/Comfy_KepListStuff"
     # Product Photo
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     # "https://github.com/kijai/ComfyUI-IC-Light"
@@ -113,10 +114,11 @@ XLAB_IPADAPTER=(
 )
 
 FLUX_LORA=(
-    "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16.safetensors"
-    "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step02250.safetensors"
-    "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step01500.safetensors"
-    "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step00750.safetensors"
+    "https://huggingface.co/churaed/dmovie-lora/resolve/main/v01/dmovie-v01_rank16_bf16.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step02250.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step01500.safetensors"
+    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step00750.safetensors"
 )
 
 CLIP_MODELS=(
