@@ -130,7 +130,7 @@ CLIP_MODELS=(
 
 SDXL_MODELS=(
     "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
-    "https://huggingface.co/fluently/Fluently-XL-v3-inpainting/blob/main/FluentlyXL-v3-inpainting.safetensors"
+    "https://huggingface.co/fluently/Fluently-XL-v3-inpainting/resolve/main/FluentlyXL-v3-inpainting.safetensors"
     # "https://huggingface.co/sd-community/sdxl-flash/resolve/main/SDXL-Flash.safetensors"
     # "https://civitai.com/api/download/models/714404" # MooMooE-comerceSDXL Product Photography
     # "https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/resolve/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors"
