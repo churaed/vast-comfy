@@ -43,7 +43,7 @@ NODES=(
     "https://github.com/M1kep/Comfy_KepListStuff"
     # Product Photo
     "https://github.com/chflame163/ComfyUI_LayerStyle"
-    # "https://github.com/kijai/ComfyUI-IC-Light"
+    "https://github.com/kijai/ComfyUI-IC-Light"
     "https://github.com/spacepxl/ComfyUI-Image-Filters"
     ""
 )
@@ -129,7 +129,8 @@ CLIP_MODELS=(
 )
 
 SDXL_MODELS=(
-    # "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
+    "https://huggingface.co/fluently/Fluently-XL-Final/resolve/main/FluentlyXL-Final.safetensors"
+    "https://huggingface.co/fluently/Fluently-XL-v3-inpainting/blob/main/FluentlyXL-v3-inpainting.safetensors"
     # "https://huggingface.co/sd-community/sdxl-flash/resolve/main/SDXL-Flash.safetensors"
     # "https://civitai.com/api/download/models/714404" # MooMooE-comerceSDXL Product Photography
     # "https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/resolve/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors"
@@ -143,7 +144,8 @@ SDXL_LORA_MODELS=(
     # "https://civitai.com/api/download/models/390257?type=Model&format=SafeTensor" # ArtfullyMOSAIC SDXL V1
     # "https://civitai.com/api/download/models/206134?type=Model&format=SafeTensor" # Socrealistic Mosaic Style XL
     # "https://civitai.com/api/download/models/288512?type=Model&format=SafeTensor" # Mosaic Texture SDXL
-    # "https://civitai.com/api/download/models/703047" # Product Photography
+    "https://civitai.com/api/download/models/703047" # Product Photography
+    "https://civitai.com/api/download/models/249521" # Texta
 )
 
 
