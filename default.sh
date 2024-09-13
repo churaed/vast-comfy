@@ -44,7 +44,10 @@ NODES=(
     # Product Photo
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     "https://github.com/kijai/ComfyUI-IC-Light"
+    "https://github.com/huchenlei/ComfyUI-IC-Light-Native"
     "https://github.com/spacepxl/ComfyUI-Image-Filters"
+    "https://github.com/stavsap/comfyui-ollama"
+    "https://github.com/jiaxiangc/ComfyUI-ResAdapter"
     ""
 )
 
