@@ -257,6 +257,7 @@ function provisioning_start() {
     provisioning_update_comfyui
     provisioning_get_nodes
     provisioning_install_python_packages
+    provisioning_install_ollama
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
@@ -402,6 +403,10 @@ function provisioning_update_comfyui() {
     if [[ -e "${WORKSPACE}/ComfyUI/requirements.txt" ]]; then
         micromamba -n comfyui run ${PIP_INSTALL} -r "${WORKSPACE}/ComfyUI/requirements.txt"
     fi
+}
+
+function provisioning_install_ollama() {
+    curl -fsSL https://ollama.com/install.sh | sh
 }
 
 provisioning_start
