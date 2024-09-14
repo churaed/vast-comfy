@@ -186,12 +186,13 @@ VAE_MODELS=(
 UPSCALE_MODELS=(
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth"
+    ""
     # "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
     # "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
-    "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+    # "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth"
@@ -250,6 +251,10 @@ EMBEDDINGS=(
 OLLAMA_MODELS=(
     "llava:13b"
     "llava-llama3"
+)
+
+SAM_MODELS=(
+    "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
@@ -330,6 +335,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
         "${XLAB_LORA[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/sams" \
+        "${SAM_MODELS[@]}"
     provisioning_print_end
 }
 
