@@ -54,25 +54,28 @@ NODES=(
 CHECKPOINT_MODELS=(
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper8_LCM.safetensors"
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors"
-    # "https://civitai.com/api/download/models/588174" UmamiLCM
     # "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors"
+    "https://civitai.com/api/download/models/537505" # CyberRealistic
+    # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
+    "https://civitai.com/api/download/models/274039" # Juggernaut
+    # "https://civitai.com/api/download/models/588174" UmamiLCM
+    # "https://civitai.com/api/download/models/256668" # absolute reality LCM
+    # "https://huggingface.co/Lykon/AbsoluteReality/resolve/main/AbsoluteReality_1.8.1_pruned.safetensors"
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
-    # "https://civitai.com/api/download/models/256668" # absolute reality LCM
-    # "https://huggingface.co/Lykon/AbsoluteReality/resolve/main/AbsoluteReality_1.8.1_pruned.safetensors"
     # "https://civitai.com/api/download/models/344398" # photonLCM
     # "https://huggingface.co/churaed/mosaic/resolve/main/blokadachd_15.ckpt"
     # "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
     # "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
-    # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
     # "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
 
 )
 
 LORA_MODELS=(
     "https://civitai.com/api/download/models/87153" # more details
+    "https://civitai.com/api/download/models/118644" # HD Helper
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
     # "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
     # "https://civitai.com/api/download/models/451956" # HXZsculpture-1
@@ -253,6 +256,7 @@ EMBEDDINGS=(
 OLLAMA_MODELS=(
     "llava:13b"
     "llava-llama3"
+    "brxce/stable-diffusion-prompt-generator"
 )
 
 SAM_MODELS=(
