@@ -247,6 +247,11 @@ EMBEDDINGS=(
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/UnrealisticDream.pt"
 )
 
+OLLAMA_MODELS=(
+    "llava:13b"
+    "llava-llama3"
+)
+
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -258,6 +263,7 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_install_python_packages
     provisioning_install_ollama
+    provisioning_get_ollama_models
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
@@ -407,6 +413,17 @@ function provisioning_update_comfyui() {
 
 function provisioning_install_ollama() {
     curl -fsSL https://ollama.com/install.sh | sh
+}
+
+function provisioning_get_ollama_models() {
+    if [[ -z $1 ]]; then return 1; fi
+    
+    printf "Downloading Ollama models...\n"
+    for model in "$@"; do
+        printf "Downloading Ollama model: %s\n" "${model}"
+        ollama pull "${model}"
+        printf "\n"
+    done
 }
 
 provisioning_start
