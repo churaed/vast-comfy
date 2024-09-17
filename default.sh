@@ -41,6 +41,7 @@ NODES=(
     "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
     "https://github.com/filliptm/ComfyUI_Fill-Nodes"
     "https://github.com/M1kep/Comfy_KepListStuff"
+    "https://github.com/shadowcz007/comfyui-mixlab-nodes"
     # Product Photo
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     "https://github.com/kijai/ComfyUI-IC-Light"
