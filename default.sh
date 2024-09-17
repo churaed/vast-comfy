@@ -54,7 +54,7 @@ NODES=(
 CHECKPOINT_MODELS=(
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper8_LCM.safetensors"
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors"
-    # "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors"
+    "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors"
     "https://civitai.com/api/download/models/537505" # CyberRealistic
     # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
     "https://civitai.com/api/download/models/274039" # Juggernaut
