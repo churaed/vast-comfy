@@ -268,6 +268,11 @@ SAM_MODELS=(
     "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt"
 )
 
+IC_LIGHT_MODELS=(
+    "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors"
+    "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors"
+)
+
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -326,6 +331,9 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/loras" \
             "${LORA_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/unet" \
+            "${IC_LIGHT_MODELS[@]}"
     
     if [[ ${DOWNLOAD_AD,,} == "true" ]]; then
         printf "Downloading AnimateDiff models...\n"
