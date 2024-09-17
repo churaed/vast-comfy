@@ -222,7 +222,7 @@ SNAPSHOTS=(
 )
 
 CLIP_VISION=(
-    # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" # CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+    "https://huggingface.co/dstnrsh/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
 )
 
 IPADAPTER=(
