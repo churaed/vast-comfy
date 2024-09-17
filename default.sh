@@ -244,6 +244,9 @@ BIREFNET=(
     "https://huggingface.co/ViperYX/BiRefNet/resolve/main/BiRefNet-DIS_ep580.pth"
     "https://huggingface.co/ViperYX/BiRefNet/resolve/main/swin_large_patch4_window12_384_22kto1k.pth"
 )
+BIREFNET_PTH=(
+    "https://github.com/ZhengPeng7/BiRefNet/releases/download/v1/BiRefNet-general-epoch_244.pth"
+)
 
 EMBEDDINGS=(
     "https://civitai.com/api/download/models/9208"
@@ -302,6 +305,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/BiRefNet" \
         "${BIREFNET[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/BiRefNet/pth" \
+        "${BIREFNET_PTH[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/sams" \
         "${SAM_MODELS[@]}"
