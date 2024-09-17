@@ -62,13 +62,9 @@ CHECKPOINT_MODELS=(
     # "https://civitai.com/api/download/models/256668" # absolute reality LCM
     # "https://huggingface.co/Lykon/AbsoluteReality/resolve/main/AbsoluteReality_1.8.1_pruned.safetensors"
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
-    # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
-    # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
-    # "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # "https://civitai.com/api/download/models/344398" # photonLCM
     # "https://huggingface.co/churaed/mosaic/resolve/main/blokadachd_15.ckpt"
     # "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
-    # "https://huggingface.co/cyberdelia/CyberRealistic/resolve/main/CyberRealistic_V5_FP32.safetensors"
     # "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
 
 )
@@ -76,11 +72,8 @@ CHECKPOINT_MODELS=(
 LORA_MODELS=(
     "https://civitai.com/api/download/models/87153" # more details
     "https://civitai.com/api/download/models/118644" # HD Helper
-    # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
-    # "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
     # "https://civitai.com/api/download/models/451956" # HXZsculpture-1
     # "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
-    # "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
     # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
     # "https://civitai.com/api/download/models/288694" # statue shigao
     # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
@@ -130,7 +123,7 @@ FLUX_LORA=(
 CLIP_MODELS=(
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors"
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors"
-    # "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q4_K_S.gguf"
+    "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q4_K_S.gguf"
     "https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf"
 )
 
@@ -159,11 +152,11 @@ ANIMATEDIFF_MODELS=(
     # "https://civitai.com/api/download/models/366178"
     # "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt"
     # "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt"
-    # "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt"
-    # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_mm.ckpt"
-    # "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt"
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_mm.ckpt"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v.ckpt"
     # "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v.ckpt"
-    # "https://huggingface.co/moonshotmillion/AnimateDiff_LCM_Motion_Model_v1/resolve/main/animatediffLCMMotion_v10.ckpt"
+    "https://huggingface.co/moonshotmillion/AnimateDiff_LCM_Motion_Model_v1/resolve/main/animatediffLCMMotion_v10.ckpt"
 )
 ANIMATEDIFF_MOTION_LORA=(
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt"
@@ -178,12 +171,17 @@ ANIMATEDIFF_MOTION_LORA=(
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt"
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt"
 )
+ANIMATEDIFF_LORAS=(
+    "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
+    "https://huggingface.co/wangfuyun/AnimateLCM-I2V/resolve/main/AnimateLCM_sd15_i2v_lora.safetensors"
+)
 
 VAE_MODELS=(
     # "https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
     "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors" # FLUX vae
-    # "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
+    "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
 
 UPSCALE_MODELS=(
@@ -197,7 +195,6 @@ UPSCALE_MODELS=(
 )
 
 CONTROLNET_MODELS=(
-    # "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth"
@@ -215,21 +212,25 @@ CONTROLNET_MODELS=(
     "https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors"
 )
 
+CONTROLNET_SDXL_MODELS=(
+    "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+)
+
 SNAPSHOTS=(
     "https://raw.githubusercontent.com/churaed/vast-comfy/main/snapshot_0.1.json"
 )
 
 CLIP_VISION=(
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" # CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+    # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" # CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 )
 
 IPADAPTER=(
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
     
 )
 
@@ -275,36 +276,10 @@ function provisioning_start() {
     provisioning_install_python_packages
     provisioning_install_ollama
     provisioning_get_ollama_models
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints" \
-        "${CHECKPOINT_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints/FLUX1" \
-        "${FLUX_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/unet" \
-        "${UNET_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/checkpoints/sdxl" \
-        "${SDXL_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/clip" \
-        "${CLIP_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/loras" \
-        "${LORA_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/loras/FLUX1" \
-        "${FLUX_LORA[@]}"
+
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/embeddings" \
         "${EMBEDDINGS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/loras/sdxl" \
-        "${SDXL_LORA_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/controlnet" \
-        "${CONTROLNET_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
@@ -318,12 +293,6 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/ipadapter" \
         "${IPADAPTER[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/animatediff_models" \
-        "${ANIMATEDIFF_MODELS[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/animatediff_motion_lora" \
-        "${ANIMATEDIFF_MOTION_LORA[@]}"
-    provisioning_get_models \
         "${WORKSPACE}/ComfyUI/snapshots" \
         "${SNAPSHOTS[@]}"
     provisioning_get_models \
@@ -333,17 +302,68 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/BiRefNet" \
         "${BIREFNET[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
-        "${XLAB_IPADAPTER[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/xlabs/controlnets" \
-        "${XLAB_CONTROLNET[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
-        "${XLAB_LORA[@]}"
-    provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/sams" \
         "${SAM_MODELS[@]}"
+
+    if [[ ${DOWNLOAD_SD15,,} == "true" ]]; then
+        printf "Downloading SD1.5 models...\n"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/checkpoints" \
+            "${CHECKPOINT_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/controlnet" \
+            "${CONTROLNET_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/clip" \
+            "${CLIP_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/loras" \
+            "${LORA_MODELS[@]}"
+    
+    if [[ ${DOWNLOAD_AD,,} == "true" ]]; then
+        printf "Downloading AnimateDiff models...\n"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/animatediff_models" \
+            "${ANIMATEDIFF_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/animatediff_motion_lora" \
+            "${ANIMATEDIFF_MOTION_LORA[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/loras/AD" \
+            "${ANIMATEDIFF_LORAS[@]}"
+    
+    if [[ ${DOWNLOAD_SDXL,,} == "true" ]]; then
+        printf "Downloading SDXL models...\n"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/checkpoints/SDXL" \
+            "${SDXL_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/controlnet/SDXL" \
+            "${CONTROLNET_SDXL_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/loras/SDXL" \
+            "${SDXL_LORA_MODELS[@]}"
+    
+    if [[ ${DOWNLOAD_FLUX,,} == "true" ]]; then
+        printf "Downloading FLUX models...\n"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/checkpoints/FLUX1" \
+            "${FLUX_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/loras/FLUX1" \
+            "${FLUX_LORA[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/unet" \
+            "${UNET_MODELS[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
+            "${XLAB_IPADAPTER[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/xlabs/controlnets" \
+            "${XLAB_CONTROLNET[@]}"
+        provisioning_get_models \
+            "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
+            "${XLAB_LORA[@]}"
     provisioning_print_end
 }
 
