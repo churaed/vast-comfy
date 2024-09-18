@@ -30,16 +30,12 @@ NODES=(
     "https://github.com/BlenderNeko/ComfyUI_Noise"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/crystian/ComfyUI-Crystools"
-    "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
     "https://github.com/daxcay/ComfyUI-JDCN"
     "https://github.com/comfyanonymous/ComfyUI_experiments"
     "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
     "https://github.com/sipherxyz/comfyui-art-venture"
     "https://github.com/M1kep/ComfyLiterals"
     "https://github.com/kijai/ComfyUI-segment-anything-2"
-    "https://github.com/MrForExample/ComfyUI-3D-Pack"
-    "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
-    "https://github.com/filliptm/ComfyUI_Fill-Nodes"
     "https://github.com/M1kep/Comfy_KepListStuff"
     "https://github.com/shadowcz007/comfyui-mixlab-nodes"
     # Product Photo
@@ -49,6 +45,11 @@ NODES=(
     "https://github.com/spacepxl/ComfyUI-Image-Filters"
     "https://github.com/stavsap/comfyui-ollama"
     "https://github.com/jiaxiangc/ComfyUI-ResAdapter"
+    # import fails
+    # "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
+    # "https://github.com/MrForExample/ComfyUI-3D-Pack"
+    # "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
+    # "https://github.com/filliptm/ComfyUI_Fill-Nodes"
     ""
 )
 
