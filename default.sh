@@ -259,11 +259,6 @@ EMBEDDINGS=(
     "https://huggingface.co/Lykon/DreamShaper/resolve/main/UnrealisticDream.pt"
 )
 
-OLLAMA_MODELS=(
-    "llava:13b"
-    "llava-llama3"
-    "brxce/stable-diffusion-prompt-generator"
-)
 
 SAM_MODELS=(
     "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt"
@@ -284,8 +279,8 @@ function provisioning_start() {
     provisioning_update_comfyui
     provisioning_get_nodes
     provisioning_install_python_packages
-    provisioning_install_ollama
-    provisioning_get_ollama_models
+    # provisioning_install_ollama
+    # provisioning_get_ollama_models
 
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/embeddings" \
