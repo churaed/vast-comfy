@@ -74,12 +74,12 @@ CHECKPOINT_MODELS=(
 LORA_MODELS=(
     "https://civitai.com/api/download/models/87153" # more details
     "https://civitai.com/api/download/models/118644" # HD Helper
-    # "https://civitai.com/api/download/models/451956" # HXZsculpture-1
+    "https://civitai.com/api/download/models/451956" # HXZsculpture-1
     # "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
     # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
     # "https://civitai.com/api/download/models/288694" # statue shigao
     # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
-    # "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
+    "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
     # "https://civitai.com/api/download/models/250533" # Sculpture
 
 )
@@ -263,6 +263,9 @@ EMBEDDINGS=(
 SAM_MODELS=(
     "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt"
 )
+SAM2=(
+    "https://huggingface.co/Kijai/sam2-safetensors/resolve/main/sam2_hiera_base_plus.safetensors"
+)
 
 IC_LIGHT_MODELS=(
     "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors"
@@ -313,6 +316,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/sams" \
         "${SAM_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/sam2" \
+        "${SAM2[@]}"
 
     if [[ ${DOWNLOAD_SD15,,} == "true" ]]; then
         printf "Downloading SD1.5 models...\n"
