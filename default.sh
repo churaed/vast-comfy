@@ -331,6 +331,7 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/unet" \
             "${IC_LIGHT_MODELS[@]}"
+    fi
     
     if [[ ${DOWNLOAD_AD,,} == "true" ]]; then
         printf "Downloading AnimateDiff models...\n"
@@ -343,6 +344,7 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/loras/AD" \
             "${ANIMATEDIFF_LORAS[@]}"
+    fi
     
     if [[ ${DOWNLOAD_SDXL,,} == "true" ]]; then
         printf "Downloading SDXL models...\n"
@@ -355,6 +357,7 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/loras/SDXL" \
             "${SDXL_LORA_MODELS[@]}"
+    fi
     
     if [[ ${DOWNLOAD_FLUX,,} == "true" ]]; then
         printf "Downloading FLUX models...\n"
@@ -376,6 +379,7 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/xlabs/loras" \
             "${XLAB_LORA[@]}"
+    fi
     provisioning_print_end
 }
 
