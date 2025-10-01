@@ -13,7 +13,6 @@ PYTHON_PACKAGES=(
 NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-    "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
     "https://github.com/cubiq/ComfyUI_essentials"
@@ -21,75 +20,27 @@ NODES=(
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/jags111/efficiency-nodes-comfyui"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
-    "https://github.com/SLAPaper/ComfyUI-Image-Selector"
-    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
-    "https://github.com/FizzleDorf/ComfyUI_FizzNodes"
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/yolain/ComfyUI-Easy-Use"
     "https://github.com/rgthree/rgthree-comfy"
-    "https://github.com/BlenderNeko/ComfyUI_Noise"
-    "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/crystian/ComfyUI-Crystools"
-    "https://github.com/daxcay/ComfyUI-JDCN"
-    "https://github.com/comfyanonymous/ComfyUI_experiments"
-    "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
-    "https://github.com/sipherxyz/comfyui-art-venture"
-    "https://github.com/M1kep/ComfyLiterals"
     "https://github.com/kijai/ComfyUI-segment-anything-2"
-    "https://github.com/M1kep/Comfy_KepListStuff"
-    "https://github.com/shadowcz007/comfyui-mixlab-nodes"
-    # Product Photo
-    "https://github.com/chflame163/ComfyUI_LayerStyle"
-    "https://github.com/kijai/ComfyUI-IC-Light"
-    "https://github.com/huchenlei/ComfyUI-IC-Light-Native"
-    "https://github.com/spacepxl/ComfyUI-Image-Filters"
-    "https://github.com/stavsap/comfyui-ollama"
-    "https://github.com/jiaxiangc/ComfyUI-ResAdapter"
-    # import fails
-    # "https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM"
-    # "https://github.com/MrForExample/ComfyUI-3D-Pack"
-    # "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BiRefNet-ZHO"
-    # "https://github.com/filliptm/ComfyUI_Fill-Nodes"
     ""
 )
 
 CHECKPOINT_MODELS=(
-    "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper8_LCM.safetensors"
-    "https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors"
-    "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors"
-    "https://civitai.com/api/download/models/537505" # CyberRealistic
-    # "https://civitai.com/api/download/models/413877" # CyberRealistic LCM
-    "https://civitai.com/api/download/models/274039" # Juggernaut
-    # "https://civitai.com/api/download/models/588174" UmamiLCM
-    # "https://civitai.com/api/download/models/256668" # absolute reality LCM
-    # "https://huggingface.co/Lykon/AbsoluteReality/resolve/main/AbsoluteReality_1.8.1_pruned.safetensors"
-    # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
-    # "https://civitai.com/api/download/models/344398" # photonLCM
-    # "https://huggingface.co/churaed/mosaic/resolve/main/blokadachd_15.ckpt"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/mosaicsclptr.ckpt"
-    # "https://huggingface.co/fluently/Fluently-v4-LCM/resolve/main/Fluently-v4-LCM.safetensors"
-
+    "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9/resolve/main/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
 )
 
 LORA_MODELS=(
-    "https://civitai.com/api/download/models/87153" # more details
-    "https://civitai.com/api/download/models/118644" # HD Helper
-    "https://civitai.com/api/download/models/451956" # HXZsculpture-1
-    # "https://civitai.com/api/download/models/16576" # epi_noiseoffset2 
-    # "https://huggingface.co/churaed/mosaic/resolve/main/mosaic_madness.safetensors"
-    # "https://civitai.com/api/download/models/288694" # statue shigao
-    # "https://civitai.com/api/download/models/188126" # Clay Sculpt - Style
-    "https://civitai.com/api/download/models/339716" # Colorful Glass Sculpture Artwork
-    # "https://civitai.com/api/download/models/250533" # Sculpture
-
+    "https://huggingface.co/churaed/SDXL-LORA-CLAYMATE-V2.03/resolve/main/CLAYMATE_V2.03_.safetensors" # claymate
 )
 
 FLUX_MODELS=(
-    "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors"
 )
 
 UNET_MODELS=(
-    "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
+    # "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf"
     # "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
     # "https://huggingface.co/city96/FLUX.1-schnell-gguf/resolve/main/flux1-schnell-Q8_0.gguf"
     # "https://huggingface.co/city96/FLUX.1-schnell-gguf/resolve/main/flux1-schnell-Q4_1.gguf"
@@ -115,12 +66,7 @@ XLAB_IPADAPTER=(
 )
 
 FLUX_LORA=(
-    "https://huggingface.co/churaed/dmovie-lora/resolve/main/v01/dmovie-v01_rank16_bf16.safetensors"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16.safetensors"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step02250.safetensors"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step01500.safetensors"
-    # "https://huggingface.co/churaed/mosaic/resolve/main/cmemory3_rank16_bf16-step00750.safetensors"
-)
+    )
 
 CLIP_MODELS=(
     "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors"
@@ -187,11 +133,12 @@ VAE_MODELS=(
 )
 
 UPSCALE_MODELS=(
+    "https://huggingface.co/MochaPixel/4XUltrasharpV10/resolve/main/4xUltrasharp_4xUltrasharpV10.pt"
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth"
-    "https://civitai.com/api/download/models/164891" # Ultramix
-    "https://civitai.com/api/download/models/357054" # 4x_RealisticRescaler_100000_G
-    "https://civitai.com/api/download/models/164898" # RealESRGAN_x4Plus
+    # "https://civitai.com/api/download/models/164891" # Ultramix
+    # "https://civitai.com/api/download/models/357054" # 4x_RealisticRescaler_100000_G
+    # "https://civitai.com/api/download/models/164898" # RealESRGAN_x4Plus
     # "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
     # "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
@@ -201,34 +148,37 @@ CONTROLNET_MODELS=(
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth"
     # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth"
-    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth"
+    # "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth"
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_sparsectrl_rgb.ckpt"
     # "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_sparsectrl_scribble.ckpt"
-    "https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors"
+    # "https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors"
 )
 
 CONTROLNET_SDXL_MODELS=(
-    "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+    # "https://huggingface.co/TTPlanet/TTPLanet_SDXL_Controlnet_Tile_Realistic/resolve/main/TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+    "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors" # xinsir/controlnet-union-sdxl-1.0
 )
 
 SNAPSHOTS=(
-    "https://raw.githubusercontent.com/churaed/vast-comfy/main/snapshot_0.1.json"
+    # "https://raw.githubusercontent.com/churaed/vast-comfy/main/snapshot_0.1.json"
 )
 
 CLIP_VISION=(
     "https://huggingface.co/dstnrsh/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+    ""
 )
 
 IPADAPTER=(
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors"
+    # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
+    # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin"
     # "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors"
@@ -237,8 +187,8 @@ IPADAPTER=(
 )
 
 YOLO=(
-    "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_gpu.jit"
-    "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_cpu.jit"
+    # "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_gpu.jit"
+    # "https://huggingface.co/camenduru/YoloWorld-EfficientSAM/resolve/main/efficient_sam_s_cpu.jit"
 )
 
 BIREFNET=(
@@ -250,26 +200,26 @@ BIREFNET_PTH=(
 )
 
 EMBEDDINGS=(
-    "https://civitai.com/api/download/models/9208"
-    "https://civitai.com/api/download/models/77169"
-    "https://civitai.com/api/download/models/94057"
-    "https://civitai.com/api/download/models/82745"
-    "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbedding.pt"
-    "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbeddingStrong.pt"
-    "https://huggingface.co/Lykon/DreamShaper/resolve/main/UnrealisticDream.pt"
+    # "https://civitai.com/api/download/models/9208"
+    # "https://civitai.com/api/download/models/77169"
+    # "https://civitai.com/api/download/models/94057"
+    # "https://civitai.com/api/download/models/82745"
+    # "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbedding.pt"
+    # "https://huggingface.co/Lykon/DreamShaper/resolve/main/FastNegativeEmbeddingStrong.pt"
+    # "https://huggingface.co/Lykon/DreamShaper/resolve/main/UnrealisticDream.pt"
 )
 
 
 SAM_MODELS=(
-    "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt"
+    "https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_base_plus.pt"
 )
 SAM2=(
-    "https://huggingface.co/Kijai/sam2-safetensors/resolve/main/sam2_hiera_base_plus.safetensors"
+    # "https://huggingface.co/Kijai/sam2-safetensors/resolve/main/sam2_hiera_base_plus.safetensors"
 )
 
 IC_LIGHT_MODELS=(
-    "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors"
-    "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors"
+    # "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors"
+    # "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
