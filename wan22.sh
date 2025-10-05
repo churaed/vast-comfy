@@ -233,6 +233,24 @@ function provisioning_start() {
     # provisioning_get_ollama_models
 
     provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/checkpoints" \
+        "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/controlnet" \
+        "${CONTROLNET_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/clip" \
+        "${CLIP_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/loras" \
+        "${LORA_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/unet" \
+        "${UNET_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/ComfyUI/models/unet" \
+        "${IC_LIGHT_MODELS[@]}"
+    provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/embeddings" \
         "${EMBEDDINGS[@]}"
     provisioning_get_models \
@@ -268,21 +286,6 @@ function provisioning_start() {
 
     if [[ ${DOWNLOAD_SD15,,} == "true" ]]; then
         printf "Downloading SD1.5 models...\n"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/checkpoints" \
-            "${CHECKPOINT_MODELS[@]}"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/controlnet" \
-            "${CONTROLNET_MODELS[@]}"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/clip" \
-            "${CLIP_MODELS[@]}"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/loras" \
-            "${LORA_MODELS[@]}"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/unet" \
-            "${IC_LIGHT_MODELS[@]}"
     fi
     
     if [[ ${DOWNLOAD_AD,,} == "true" ]]; then
@@ -319,9 +322,6 @@ function provisioning_start() {
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/loras/FLUX1" \
             "${FLUX_LORA[@]}"
-        provisioning_get_models \
-            "${WORKSPACE}/ComfyUI/models/unet" \
-            "${UNET_MODELS[@]}"
         provisioning_get_models \
             "${WORKSPACE}/ComfyUI/models/xlabs/ipadapters" \
             "${XLAB_IPADAPTER[@]}"
